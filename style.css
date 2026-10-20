@@ -1,0 +1,504 @@
+/* ==========================================================
+   WHO'S THAT POKÉMON? - DELUXE RETRO ARCADE THEME
+   ========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d32027; /* Rich Pokémon Red */
+    background-image: 
+        radial-gradient(circle at 15% 15%, #ff5252 0%, transparent 35%),
+        radial-gradient(circle at 85% 85%, #8b0000 0%, transparent 40%),
+        repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.04) 0px, rgba(0, 0, 0, 0.04) 2px, transparent 2px, transparent 12px);
+    font-family: 'Press Start 2P', cursive, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #222;
+}
+
+/* --------------------------------------------------
+   Header & Pokeball Icon
+-------------------------------------------------- */
+.pokeball-icon {
+    width: 76px;
+    height: 76px;
+    background: linear-gradient(to bottom, #ff1a1a 50%, #ffffff 50%);
+    border-radius: 50%;
+    border: 6px solid #111;
+    position: relative;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4), inset 0 3px 6px rgba(255, 255, 255, 0.5);
+    margin-bottom: 18px;
+    animation: slowSpin 8s infinite linear;
+}
+
+.pokeball-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #111;
+    transform: translateY(-50%);
+}
+
+.pokeball-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 5px solid #111;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slowSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.main-title {
+    font-size: 1.8rem;
+    color: #ffde00; /* Iconic Pokémon Gold */
+    text-shadow: 
+        4px 4px 0 #3b4cca, 
+        -3px -3px 0 #3b4cca,  
+        3px -3px 0 #3b4cca,
+        -3px 3px 0 #3b4cca,
+        0 8px 0 #1b2879,
+        0 12px 20px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    animation: gentleBob 2s infinite alternate ease-in-out;
+}
+
+@keyframes gentleBob {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-6px); }
+}
+
+/* --------------------------------------------------
+   Pokédex Main Card (Large, Solid Console)
+-------------------------------------------------- */
+.pokedex-card {
+    background: #e2b30d; /* Pokédex Metallic Gold / Yellow */
+    border: 7px solid #1b2879; /* Classic Deep Navy Blue */
+    border-radius: 24px;
+    padding: 30px;
+    max-width: 680px;
+    width: 95%;
+    box-shadow: 
+        0 14px 0 #0d1544,
+        0 20px 35px rgba(0, 0, 0, 0.55),
+        inset 0 4px 0 rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Pokédex Sensor Lights Bar */
+.pokedex-top-bar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+}
+
+.big-blue-sensor {
+    width: 44px;
+    height: 44px;
+    background: radial-gradient(circle at 35% 35%, #88d4f7 0%, #1e90ff 50%, #003b8e 100%);
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(30, 144, 255, 0.8), 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.mini-lights {
+    display: flex;
+    gap: 8px;
+}
+
+.mini-light {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #222;
+}
+
+.mini-light.red {
+    background: radial-gradient(circle at 30% 30%, #ff8888, #cc0000);
+    box-shadow: 0 0 6px #ff0000;
+}
+
+.mini-light.yellow {
+    background: radial-gradient(circle at 30% 30%, #ffffaa, #e6b800);
+    box-shadow: 0 0 6px #ffde00;
+}
+
+.mini-light.green {
+    background: radial-gradient(circle at 30% 30%, #99ff99, #00aa00);
+    box-shadow: 0 0 6px #00ff00;
+}
+
+.pokedex-brand {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: #1b2879;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* --------------------------------------------------
+   Input & Guess Button Row
+-------------------------------------------------- */
+.input-group {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+#input-poke {
+    flex: 1;
+    padding: 16px 18px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.95rem;
+    border: 4px solid #222;
+    border-radius: 12px;
+    outline: none;
+    background-color: #ffffff;
+    color: #111;
+    text-transform: uppercase;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+#input-poke::placeholder {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+#input-poke:focus {
+    border-color: #3b4cca;
+    box-shadow: 0 0 12px rgba(59, 76, 202, 0.6), inset 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-group .arcade-btn-yellow {
+    width: auto;
+    min-width: 140px;
+    font-size: 0.95rem;
+}
+
+/* --------------------------------------------------
+   Hints - Game Boy LCD Screens
+-------------------------------------------------- */
+.hints-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.lcd-hint {
+    width: 100%;
+    background-color: #8b956d; /* Game Boy LCD Green */
+    color: #0f380f;
+    border: 4px solid #0f380f;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    box-shadow: inset 0 0 10px rgba(15, 56, 15, 0.4), 0 3px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Subtle scanlines effect */
+.lcd-hint::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.04) 0px, rgba(0, 0, 0, 0.04) 1px, transparent 1px, transparent 3px);
+    pointer-events: none;
+    border-radius: 6px;
+}
+
+/* Automatically hide empty hint elements */
+.lcd-hint:empty {
+    display: none;
+}
+
+/* --------------------------------------------------
+   Terminal Output Screen
+-------------------------------------------------- */
+.terminal-screen {
+    width: 100%;
+    background: #0d120d;
+    color: #00ff66; /* Bright CRT Terminal Green */
+    border: 4px solid #333;
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.6;
+    text-transform: uppercase;
+    box-shadow: 
+        inset 0 0 15px rgba(0, 255, 102, 0.35),
+        0 4px 0 rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+/* --------------------------------------------------
+   Action Buttons (New Game / Reveal Video)
+-------------------------------------------------- */
+.actions-row {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.arcade-btn {
+    width: 100%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.85rem;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.1s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 1px;
+}
+
+.arcade-btn:active {
+    transform: translateY(5px);
+    box-shadow: none !important;
+}
+
+/* Yellow Guess / Close Button */
+.arcade-btn-yellow {
+    background-color: #ffde00;
+    color: #111;
+    box-shadow: 0 6px 0 #b39b00, 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.arcade-btn-yellow:hover {
+    background-color: #ffe833;
+}
+
+/* Blue New Game Button */
+.arcade-btn-blue {
+    background-color: #3b4cca;
+    color: #ffffff;
+    box-shadow: 0 6px 0 #1b2879, 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.arcade-btn-blue:hover {
+    background-color: #5163ed;
+}
+
+/* Dark Subtle Button (Manual Reveal) */
+.arcade-btn-dark {
+    background-color: #2b2b36;
+    color: #ffde00;
+    box-shadow: 0 6px 0 #14141a, 0 8px 15px rgba(0, 0, 0, 0.3);
+    font-size: 0.75rem;
+}
+
+.arcade-btn-dark:hover {
+    background-color: #3e3e4d;
+}
+
+/* Red Play Button */
+.arcade-btn-red {
+    display: none;
+    background-color: #e61919;
+    color: #ffffff;
+    box-shadow: 0 6px 0 #990000, 0 8px 15px rgba(0, 0, 0, 0.3);
+    font-size: 0.85rem;
+}
+
+.arcade-btn-red:hover {
+    background-color: #ff3333;
+}
+
+/* --------------------------------------------------
+   Cinematic Popup Modal & Video Overlay
+-------------------------------------------------- */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-box {
+    background-color: #ffffff;
+    border: 7px solid #3b4cca;
+    border-radius: 24px;
+    padding: 26px;
+    width: 95%;
+    max-width: 680px;
+    text-align: center;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    animation: modalPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes modalPop {
+    0% { transform: scale(0.85); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.popup-box h2 {
+    font-size: 1.15rem;
+    color: #3b4cca;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Video Frame with Centered Overlay */
+.video-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: #000;
+    border: 5px solid #ffde00;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.video-container video {
+    width: 100%;
+    max-height: 380px;
+    display: block;
+    background-color: #000;
+}
+
+.video-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    text-align: center;
+    width: 95%;
+    z-index: 15;
+}
+
+.reveal-text {
+    display: inline-block;
+    font-size: 1.9rem;
+    color: #ffde00;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 
+        4px 4px 0 #cc0000, 
+        -3px -3px 0 #000, 
+        3px -3px 0 #000, 
+        -3px 3px 0 #000,
+        0 0 25px rgba(255, 222, 0, 1);
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+.reveal-text.show {
+    animation: revealPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+}
+
+@keyframes revealPop {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    80% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* --------------------------------------------------
+   Responsive Adjustments for Smaller Screens
+-------------------------------------------------- */
+@media (max-width: 580px) {
+    .main-title {
+        font-size: 1.25rem;
+    }
+
+    .pokedex-card {
+        padding: 20px 16px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group .arcade-btn-yellow {
+        width: 100%;
+    }
+
+    .actions-row {
+        flex-direction: column;
+    }
+
+    .reveal-text {
+        font-size: 1.35rem;
+    }
+
+    .popup-box {
+        padding: 18px 14px;
+    }
+
+    .video-container video {
+        max-height: 260px;
+    }
+}

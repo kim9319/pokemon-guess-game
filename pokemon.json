@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Pikachu",
+    "hints": [
+      "Electric Type Mouse Pokémon",
+      "Yellow body with red cheek pouches that store electricity",
+      "Signature mascot of the Pokémon franchise that evolves into Raichu"
+    ]
+  },
+  {
+    "name": "Charmander",
+    "hints": [
+      "Fire Type Lizard Pokémon",
+      "Orange body with a cream-colored belly and blue eyes",
+      "The flame at the tip of its tail indicates its health and emotions"
+    ]
+  },
+  {
+    "name": "Charizard",
+    "hints": [
+      "Fire and Flying Type Flame Pokémon",
+      "Large orange dragon-like creature with massive wings and fiery breath",
+      "The final evolution of the Gen 1 fire starter Charmander"
+    ]
+  },
+  {
+    "name": "Bulbasaur",
+    "hints": [
+      "Grass and Poison Type Seed Pokémon",
+      "Green quadruped with dark green spots and red eyes",
+      "Carries a large plant bulb on its back from the day it is born"
+    ]
+  },
+  {
+    "name": "Squirtle",
+    "hints": [
+      "Water Type Tiny Turtle Pokémon",
+      "Light blue body with a tough brown shell and curly tail",
+      "Shoots water from its mouth and leader of a famous anime squad with sunglasses"
+    ]
+  },
+  {
+    "name": "Blastoise",
+    "hints": [
+      "Water Type Shellfish Pokémon",
+      "Large bipedal blue turtle with a heavy brown shell",
+      "Features two powerful pressurized water cannons protruding from its shell"
+    ]
+  },
+  {
+    "name": "Gengar",
+    "hints": [
+      "Ghost and Poison Type Shadow Pokémon",
+      "Round purple body with glowing red eyes and a mischievous sinister grin",
+      "Hides in the shadows of people and absorbs warmth from its surroundings"
+    ]
+  },
+  {
+    "name": "Mewtwo",
+    "hints": [
+      "Psychic Type Genetic Pokémon",
+      "Bipedal feline humanoid with a purple tail and immense telekinetic power",
+      "Created by scientists through gene splicing from Mew's DNA"
+    ]
+  },
+  {
+    "name": "Mew",
+    "hints": [
+      "Psychic Type New Species Pokémon",
+      "Small pink mythical creature with blue eyes and a long thin tail",
+      "Said to possess the genetic code of all existing Pokémon and can learn any TM"
+    ]
+  },
+  {
+    "name": "Eevee",
+    "hints": [
+      "Normal Type Evolution Pokémon",
+      "Small brown mammalian creature with a bushy tail and cream-colored neck ruff",
+      "Has an unstable genetic makeup allowing it to evolve into eight different forms"
+    ]
+  },
+  {
+    "name": "Snorlax",
+    "hints": [
+      "Normal Type Sleeping Pokémon",
+      "Huge dark blue-green creature with a cream belly and closed eyes",
+      "Spends almost all its time eating and sleeping, often blocking routes until a Poké Flute is played"
+    ]
+  },
+  {
+    "name": "Jigglypuff",
+    "hints": [
+      "Normal and Fairy Type Balloon Pokémon",
+      "Round pink ball with large blue eyes, cat-like ears, and a curl of fur",
+      "Sings a soothing lullaby that puts listeners to sleep, then draws on their faces with a marker"
+    ]
+  },
+  {
+    "name": "Gyarados",
+    "hints": [
+      "Water and Flying Type Atrocious Pokémon",
+      "Enormous serpentine sea monster with blue scales and an gaping mouth",
+      "Known for destructive rages and surprisingly evolves from the helpless Magikarp"
+    ]
+  },
+  {
+    "name": "Magikarp",
+    "hints": [
+      "Water Type Fish Pokémon",
+      "Orange fish with a yellow crown fin, large barbels, and blank eyes",
+      "Famous for being virtually useless in battle using only Splash before evolving"
+    ]
+  },
+  {
+    "name": "Dragonite",
+    "hints": [
+      "Dragon and Flying Type Dragon Pokémon",
+      "Friendly-looking orange bipedal dragon with small wings and kind green eyes",
+      "Capable of circling the globe in just 16 hours and rescues drowning sailors"
+    ]
+  },
+  {
+    "name": "Psyduck",
+    "hints": [
+      "Water Type Duck Pokémon",
+      "Yellow duck-like creature that constantly clutches its head with both hands",
+      "Suffers from chronic headaches that unleash powerful psychic abilities when severe"
+    ]
+  },
+  {
+    "name": "Meowth",
+    "hints": [
+      "Normal Type Scratch Cat Pokémon",
+      "Small cream-colored feline with brown tipped ears and curled tail",
+      "Has a shiny golden koban coin on its forehead and is famous for talking in Team Rocket"
+    ]
+  },
+  {
+    "name": "Alakazam",
+    "hints": [
+      "Psychic Type Psi Pokémon",
+      "Yellow humanoid with long mustache whiskers and an IQ exceeding 5,000",
+      "Holds two silver spoons that amplify its telekinetic brainwaves"
+    ]
+  },
+  {
+    "name": "Machamp",
+    "hints": [
+      "Fighting Type Superpower Pokémon",
+      "Muscular gray bipedal warrior wearing a champion belt",
+      "Has four muscular arms capable of unleashing a flurry of 1,000 punches in two seconds"
+    ]
+  },
+  {
+    "name": "Onix",
+    "hints": [
+      "Rock and Ground Type Rock Snake Pokémon",
+      "Massive chain of gray boulders that forms a giant burrowing serpent",
+      "Tunneling underground at 50 mph, it is Brock's signature Pokémon"
+    ]
+  },
+  {
+    "name": "Lapras",
+    "hints": [
+      "Water and Ice Type Transport Pokémon",
+      "Gentle blue sea creature with a knobby gray shell and curly ears",
+      "Ferry across oceans with people riding on its back, known for singing beautiful songs"
+    ]
+  },
+  {
+    "name": "Ditto",
+    "hints": [
+      "Normal Type Transform Pokémon",
+      "Malleable pink-purple blob with beady black eyes and a simple smile",
+      "Can perfectly reorganize its cellular structure to transform into any other Pokémon"
+    ]
+  },
+  {
+    "name": "Vaporeon",
+    "hints": [
+      "Water Type Bubble Jet Pokémon",
+      "Blue quadruped with a white neck ruff and a mermaid-like fin tail",
+      "Its cellular structure is similar to water, allowing it to melt invisibly into water"
+    ]
+  },
+  {
+    "name": "Jolteon",
+    "hints": [
+      "Electric Type Lightning Pokémon",
+      "Yellow quadruped with spiky white neck collar and needle-like electrified fur",
+      "Generates electricity from negative ions in its fur, evolving from Eevee via Thunder Stone"
+    ]
+  },
+  {
+    "name": "Flareon",
+    "hints": [
+      "Fire Type Flame Pokémon",
+      "Reddish-orange quadruped with a fluffy yellow mane and bushy tail",
+      "Has a flame sac inside its body that can superheat inhaled air up to 3,000 degrees"
+    ]
+  },
+  {
+    "name": "Lucario",
+    "hints": [
+      "Fighting and Steel Type Aura Pokémon",
+      "Bipedal canine with blue and black fur and metal spikes on paws and chest",
+      "Can read and manipulate the aura energy of all living beings"
+    ]
+  },
+  {
+    "name": "Greninja",
+    "hints": [
+      "Water and Dark Type Ninja Pokémon",
+      "Dark blue frog-like creature that wraps its long pink tongue around its neck like a scarf",
+      "Creates throwing stars out of compressed water and is Ash's famous Kalos ace"
+    ]
+  },
+  {
+    "name": "Garchomp",
+    "hints": [
+      "Dragon and Ground Type Mach Pokémon",
+      "Dark blue hammerhead land shark with red chest and scythe-like fin arms",
+      "Flies at the speed of a jet fighter and is Champion Cynthia's feared ace Pokémon"
+    ]
+  },
+  {
+    "name": "Togepi",
+    "hints": [
+      "Fairy Type Spike Ball Pokémon",
+      "Tiny creature encased inside an eggshell with red and blue triangular markings",
+      "Said to store happiness in its shell and share it with kind-hearted people"
+    ]
+  },
+  {
+    "name": "Rayquaza",
+    "hints": [
+      "Dragon and Flying Type Sky High Pokémon",
+      "Colossal green serpentine dragon with yellow ring patterns and aerodynamic fins",
+      "Lives high in the ozone layer for hundreds of millions of years, calming Kyogre and Groudon"
+    ]
+  }
+]

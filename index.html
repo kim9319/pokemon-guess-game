@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's That Pokémon? - Guessing Game</title>
+    <!-- Google Retro Pixel & Clean UI Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pokeball-icon"></div>
+    <h1 class="main-title">Guess The Pokémon</h1>
+
+    <div class="pokedex-card">
+        <!-- Pokédex Decorative Top Indicators -->
+        <div class="pokedex-top-bar">
+            <div class="big-blue-sensor"></div>
+            <div class="mini-lights">
+                <span class="mini-light red"></span>
+                <span class="mini-light yellow"></span>
+                <span class="mini-light green"></span>
+            </div>
+            <div class="pokedex-brand">POKÉDEX V2.0</div>
+        </div>
+
+        <!-- Input & Guess Button Row -->
+        <div class="input-group">
+            <input type="text" id="input-poke" placeholder="ENTER POKÉMON NAME..." autocomplete="on" />
+            <button type="submit" id="submit-button" class="arcade-btn arcade-btn-yellow">GUESS</button>
+        </div>
+
+        <!-- Progressive Hints Display -->
+        <div class="hints-container">
+            <p id="hint1" class="lcd-hint"></p>
+            <p id="hint2" class="lcd-hint"></p>
+            <p id="hint3" class="lcd-hint"></p>
+        </div>
+
+        <!-- Terminal Output / Guess Feedback -->
+        <p id="output-poke" class="terminal-screen">READY TO PLAY! ENTER YOUR GUESS.</p>
+
+        <!-- Action Control Buttons -->
+        <div class="actions-row">
+            <button id="newgame" class="arcade-btn arcade-btn-blue"> NEW GAME</button>
+            <button id="open-btn" class="arcade-btn arcade-btn-dark"> WHO'S THAT POKÉMON?</button>
+        </div>
+
+        <!-- Video Modal Overlay -->
+        <div id="popup-overlay" class="overlay">
+            <div class="popup-box">
+                <h2>⚡ WHO'S THAT POKÉMON? ⚡</h2>
+                <div class="video-container">
+                    <video id="poke-video" src="whos-that-pokemon.mp4" width="100%" controls playsinline preload="auto">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay-text">
+                        <span id="pokemon-reveal-name" class="reveal-text"></span>
+                    </div>
+                </div>
+                <button id="play-video-btn" class="arcade-btn arcade-btn-red">▶ PLAY VIDEO WITH SOUND</button>
+                <button id="close-btn" class="arcade-btn arcade-btn-yellow">CLOSE</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
